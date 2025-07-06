@@ -6,11 +6,11 @@ class Whambam < Formula
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cloudy-native/whambam.dev/releases/download/v0.1.10/whambam-v0.1.10-aarch64-apple-darwin.tar.gz"
-      sha256 "03a8f32d616424477c14fc4fb99410f609b6043a3c70cb3d5c1b3662b4783372"
+      url "https://github.com/cloudy-native/whambam.dev/releases/download/v0.1.12/whambam-v0.1.12-aarch64-apple-darwin.tar.gz"
+      sha256 "efd47461a4d3718f90d364f984ad939f335e60a5fe848264c4854d508db5f4a7"
     else
-      url "https://github.com/cloudy-native/whambam.dev/releases/download/v0.1.10/whambam-v0.1.10-x86_64-apple-darwin.tar.gz"
-      sha256 "6e04ad0580a68a2b8ac4c9fe0abca434501b7a57cdaab3518bd2339dd0f8c477"
+      url "https://github.com/cloudy-native/whambam.dev/releases/download/v0.1.12/whambam-v0.1.12-x86_64-apple-darwin.tar.gz"
+      sha256 "1e5f932d68f7fa92e34a5c91d0b87a97563add83e60487fe9bfe03e3e9f9c87b"
     end
   end
   
