@@ -1,23 +1,23 @@
 class Whambam < Formula
   desc "whambam: a simple CLI tool for web performance testing"
-  homepage "https://github.com/cloudy-native/whambam.dev"
+  homepage "https://whambam.dev"
   license "MIT"
   head "https://github.com/cloudy-native/whambam.dev.git", branch: "main"
-
+  
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cloudy-native/whambam.dev/releases/download/v0.1.5/whambam-v0.1.7-aarch64-apple-darwin.tar.gz"
-      sha256 "sha256:26150f085d15a3477e86a6939a34600334548f9808d5d4e8e49a2e25ddee0695"
+      url "https://github.com/cloudy-native/whambam.dev/releases/download/v0.2.0/whambam-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "d593c240599a2f82a9015a3ad5f40c6e9efdd92bb81027dc94ddfa51c72745e4"
     else
-      url "https://github.com/cloudy-native/whambam.dev/releases/download/v0.1.5/whambam-v0.1.7-x86_64-apple-darwin.tar.gz"
-      sha256 "sha256:9f4ebe80ac463380ebd2e76c414da0b7ca48c617db18bff7de591337202257f8"
+      url "https://github.com/cloudy-native/whambam.dev/releases/download/v0.2.0/whambam-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "2b64d21a918d2608944784432b416360018b6d4de722690146b2a60b3dc64afa"
     end
   end
-
+  
   def install
     bin.install "whambam"
   end
-
+  
   test do
     system "#{bin}/whambam", "--version"
   end
